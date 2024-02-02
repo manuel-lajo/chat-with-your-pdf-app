@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Inter } from "next/font/google";
+import axios from "axios";
 import Box from "@/components/Box"
 
 const inter = Inter({ subsets: ["latin"] });
@@ -8,9 +9,8 @@ export default function Home() {
 
   useEffect(() => {
     const requestAPI = async () => {
-      const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-      const data = await response.json()
-      console.log(data)
+      const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1')
+      console.log(response.data)
     }
 
     requestAPI()
