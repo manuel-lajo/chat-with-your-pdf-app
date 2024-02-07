@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 
-import PdfChat from '@/components/ChatWithPdf'
+import ChatWithPdf from '@/components/ChatWithPdf'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +11,7 @@ export default function MainPage() {
         <span>Chat with your PDF</span>
       </div>
       <div className="flex xl:h-full flex-col items-center justify-between">
-        <PdfChat />
+        <ChatWithPdf />
       </div>
     </main>
   )
