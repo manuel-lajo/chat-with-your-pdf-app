@@ -9,23 +9,23 @@ const useToast = () => {
     pauseOnHover: true
   }
 
-  const infoToast = content => {
+  const showInfoToast = content => {
     toast.info(content, options)
   }
 
-  const successToast = content => {
+  const showSuccessToast = content => {
     toast.success(content, options)
   }
 
-  const warningToast = content => {
+  const showWarningToast = content => {
     toast.warning(content, options)
   }
 
-  const errorToast = content => {
+  const showErrorToast = content => {
     toast.error(content, options)
   }
 
-  return { infoToast, successToast, warningToast, errorToast }
+  return { showInfoToast, showSuccessToast, showWarningToast, showErrorToast }
 }
 
 export default useToast

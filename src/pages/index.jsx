@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 
-import PdfChat from '@/components/PdfChat'
+import PdfChat from '@/components/ChatWithPdf'
 
 const inter = Inter({ subsets: ['latin'] })
 
